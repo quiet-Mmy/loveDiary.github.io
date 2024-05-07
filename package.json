@@ -1,0 +1,39 @@
+{
+  "name": "love-diary",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "element-plus": "^2.6.3",
+    "express": "^4.19.2",
+    "fetch": "^1.1.0",
+    "file-saver": "^2.0.5",
+    "fly-barrage": "^2.2.0",
+    "jszip": "^3.10.1",
+    "mysql": "^2.18.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persist": "^1.0.0",
+    "screenfull": "^6.0.2",
+    "v-viewer": "^3.0.13",
+    "viewerjs": "^1.11.6",
+    "vue": "^3.4.21",
+    "vue-router": "4",
+    "vue-waterfall-plugin-next": "^2.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.74.1",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.2.0"
+  }
+}

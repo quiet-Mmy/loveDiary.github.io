@@ -1,0 +1,77 @@
+@import "./variable.scss";
+
+.contaner {
+  width: calc(100vw - 400px);
+  margin: 0 auto;
+}
+.mAuto {
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-center {
+  @extend .flex-row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  @extend .flex-column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-row-center-v {
+  @extend .flex-row;
+  align-items: center;
+}
+
+.flex .flex-column-center-v {
+  @extend .flex-column;
+  align-items: center;
+}
+
+// 左右布局
+.container-row {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  .row-item {
+    width: calc(50% - 5px);
+    padding: 10px;
+    background-color: rgb(202, 217, 253) !important;
+  }
+}
+
+.container-row-sm-left {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  .row-item:nth-child(1) {
+    width: 280px;
+    padding: 10px;
+    background-color: $item-bgc;
+  }
+
+  .row-item:nth-child(2) {
+    width: calc(100% - 270px);
+    margin-left: 10px;
+    padding: 10px;
+    background-color: $item-bgc;
+  }
+}
